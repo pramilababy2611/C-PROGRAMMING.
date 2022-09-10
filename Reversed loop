@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(){
+ int Num, rev_Num = 0, remainder;
+ printf("Enter the number to reverse: ");
+ scanf("%d", &Num); 
+ while (Num != 0){
+ remainder = Num % 10;
+ rev_Num = rev_Num * 10 + remainder;
+ Num = Num/10;
+ } 
+ printf("The reversed number is: %d", rev_Num);return 0;
+}
+Testcases:
+1.Enter the number to reverse: -45721
+ The reversed number is: -12754
+2. Enter the number to reverse: 000
+ The reversed number is: 0 
+3.Enter the number to reverse: !@#$%
+ The reversed number is:%$#@!
+4.enter the number to reverse: 145*999=144855
+ The reversed number is :558441=999*541
+5.enter the number to reverse :AD1947
+ The reversed number is :7491DA
