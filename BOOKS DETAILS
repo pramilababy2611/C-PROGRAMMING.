@@ -1,0 +1,45 @@
+#include<stdio.h>
+
+struct book
+{
+    char title[10];
+	char subject[15];
+	char book_name[20];
+    int bookid;
+	int no_of_books;
+    char author[15];
+};
+
+int main()
+{
+    struct book b[10];
+    int i;
+    
+    {
+        
+        printf("Enter book id: ");
+        scanf("%d", &b[i].bookid);
+        printf("Enter book name: ");
+        scanf("%s", b[i].book_name);
+        printf("Enter book author: ");
+        scanf("%s", b[i].author);
+        printf("Enter no_of_books: ");
+        scanf("%d", &b[i].no_of_books);
+        printf("enter the subject:");
+        scanf("%s",&b[i].subject);
+        printf("enter the title:");
+        scanf("%s",&b[i].title);
+    }
+
+   
+    {
+      
+        printf("Book Id: %d\n", b[i].bookid);
+        printf("Book Name: %s\n", b[i].book_name);
+        printf("Book Author: %s\n", b[i].author);
+        printf("no_of_books: %d\n", b[i].no_of_books);
+        printf("subject:%s\n",&b[i].subject);
+        printf("title:%s\n",&b[i].title);
+    }
+    return 0;
+}
