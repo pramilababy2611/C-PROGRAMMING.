@@ -1,4 +1,4 @@
-# C-PROGRAMMING.
+
 #include <stdio.h>
 int main()
 {
